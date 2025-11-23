@@ -79,7 +79,17 @@ def remove_all_spaces(u_text):
             new_word += letter
     return new_word
 
+def palindrome_check(u_text):
+    backwards = u_text[::-1]
+    if u_text == backwards:
+        palindrome = True
+    else:
+        palindrome = False
+    return palindrome
+
+
 menu()
-print(remove_all_spaces(user_text))
+print(palindrome_check(user_text))
+
 
 
